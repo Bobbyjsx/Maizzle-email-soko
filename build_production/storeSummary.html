@@ -25,74 +25,171 @@
 </head>
 <body style="margin: 0; width: 100%; padding: 0; -webkit-font-smoothing: antialiased; word-break: break-word">
   <div role="article" aria-roledescription="email" aria-label lang="en" style="margin: 0; padding: 0">
-    <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%">
+    <table style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
       <tbody>
         <tr>
-          <td align="center" style="background-color: #f9fafb; padding: 16px">
-            <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; min-width: 320px; max-width: 700px">
+          <td align="center" style="background-color: #f9fafb; padding: 1rem;">
+            <table style="width: 100%; max-width: 700px; min-width: 320px;" cellpadding="0" cellspacing="0" role="presentation">
               <tbody>
                 <tr>
-                  <td align="left" style="padding-bottom: 24px">
-                    <img src="/images/sm-logo.svg" alt="SokoSQ" width="70" height="70" style="vertical-align: middle; display: block; margin-bottom: 24px; max-width: 100%">
-                    <h1 style="margin: 0 0 8px; font-size: 20px; font-weight: 600; color: #1f2937">Hey [Store Name] 👋</h1>
-                    <p style="margin: 0; font-size: 16px; color: #4b5563">
+                  <td align="left" style="padding-bottom: 1.5rem;">
+                    <img src="sm-logo.svg" alt="SokoSQ" width="70" height="70" style="vertical-align: middle; display: block; margin-bottom: 1.5rem; max-width: 100%">
+                    <h1 style="color: #1f2937; font-size: 1.25rem; font-weight: 600; margin: 0 0 0.5rem;">Hey [Store Name] 👋</h1>
+                    <p style="color: #4b5563; font-size: 1rem; margin: 0;">
                       Hope you had a great week! Here's your store's performance breakdown from the past week:
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td style="padding-bottom: 24px">
-                    <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate; width: 100%; border-radius: 8px; border-width: 1px; border-color: #e5e7eb; background-color: #fffffe; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
+                  <td style="padding-bottom: 1.5rem;">
+                    <table style="width: 100%; background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.05);" cellpadding="0" cellspacing="0" role="none">
                       <tbody>
                         <tr>
-                          <td style="border-bottom-width: 1px; border-color: #e5e7eb; padding: 16px">
-                            <h2 style="margin: 0 0 8px; font-size: 18px; font-weight: 600; color: #1F0444">Weekly Performance Summary</h2>
-                            <p style="margin: 0; font-size: 14px; color: #4b5563">Your metrics compared to the previous week</p>
+                          <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">
+                            <h2 style="color: #9333ea; font-size: 18px; font-weight: 600; margin: 0 0 8px;">Weekly Performance Summary</h2>
+                            <p style="color: #4b5563; font-size: 14px; margin: 0;">Your metrics compared to the previous week</p>
                           </td>
                         </tr>
                         <tr>
-                          <td style="padding: 8px 16px 16px">
-                            <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%">
+                          <td style="padding: 8px 16px 16px;">
+                            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                              <a href="https://stage.sokosq.com/orders" style="flex: 1 1 calc(50% - 8px); min-width: 100px; border: 1px solid goldenrod; border-radius: 6px; padding: 12px; text-decoration: none;">
+                                <p style="color: #6b7280; font-size: 14px; margin: 0 0 4px;">Store Visits</p>
+                                <div style="display: flex; align-items: center; column-gap: 8px">
+                                  <p style="color: #1f2937; font-size: 20px; font-weight: 600; margin: 0; padding: 0">X people</p>
+                                  <p style="color: oklch(0.723 0.219 149.579); font-size: 14px; margin: 0;">↑ X% vs last week</p>
+                                </div>
+                              </a>
+                              <a href="https://stage.sokosq.com/orders" style="flex: 1 1 calc(50% - 8px); min-width: 100px; border: 1px solid goldenrod; border-radius: 6px; padding: 12px; text-decoration: none;">
+                                <p style="color: #6b7280; font-size: 14px; margin: 0 0 4px;">Orders Placed</p>
+                                <div style="display: flex; align-items: center; column-gap: 8px">
+                                  <p style="color: #1f2937; font-size: 20px; font-weight: 600; margin: 0 0 4px;">X orders</p>
+                                  <p style="color: oklch(0.723 0.219 149.579); font-size: 14px; margin: 0;">↑ X% vs last week</p>
+                                </div>
+                              </a>
+                              <a href="https://stage.sokosq.com/orders" style="flex: 1 1 100%; min-width: 100px; border: 1px solid goldenrod; border-radius: 6px; padding: 12px; text-decoration: none;">
+                                <p style="color: #6b7280; font-size: 14px; margin: 0 0 4px;">Total Sales</p>
+                                <div style="display: flex; align-items: center; column-gap: 8px">
+                                  <p style="color: #1f2937; font-size: 20px; font-weight: 600; margin: 0 0 4px;">$X revenue</p>
+                                  <p style="color: oklch(0.723 0.219 149.579); font-size: 14px; margin: 0;">↑ X% vs last week</p>
+                                </div>
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom: 1.5rem;">
+                    <table style="width: 100%; background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.05);" cellpadding="0" cellspacing="0" role="none">
+                      <tbody>
+                        <tr>
+                          <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">
+                            <h2 style="color: #1f2937; font-size: 18px; font-weight: 600; margin: 0;">What's Trending</h2>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 1rem;">
+                            <div style="margin-bottom: 12px;">
+                              <div style="display: flex; align-items: center;">
+                                <span style="background: #f3f4f6; border-radius: 50%; padding: 4px; margin-right: 12px;">🏆</span>
+                                <p style="color: #1f2937; font-size: 14px; margin: 0;">
+                                  <strong>Bestseller:</strong>
+                                  <span style="color: #9333ea;">[Product Name]</span> – Sold X times!
+                                </p>
+                              </div>
+                            </div>
+                            <div>
+                              <div style="display: flex; align-items: center;">
+                                <span style="background: #f3f4f6; border-radius: 50%; padding: 4px; margin-right: 12px;">💡</span>
+                                <p style="color: #1f2937; font-size: 14px; margin: 0;">
+                                  <strong>Opportunity:</strong> Consider running a promo on this product to drive more sales!
+                                </p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom: 1.5rem;">
+                    <table style="width: 100%; background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-collapse: separate;" cellpadding="0" cellspacing="0" role="presentation">
+                      <tbody>
+                        <tr>
+                          <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">
+                            <h2 style="color: #1f2937; font-size: 1.125rem; font-weight: 600; margin: 0;">Growth & Engagement</h2>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 1rem;">
+                            <table style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
                               <tbody>
                                 <tr>
-                                  <td style="width: 33.333333%; padding-right: 8px">
-                                    <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate; width: 100%; border-radius: 6px; border-width: 1px; border-color: #e5e7eb; background-color: #fffffe">
-                                      <tbody>
-                                        <tr>
-                                          <td style="padding: 12px">
-                                            <p style="margin: 0 0 4px; font-size: 14px; color: #6b7280">Store Visits</p>
-                                            <p style="margin: 0 0 4px; font-size: 20px; font-weight: 600; color: #1f2937">X people</p>
-                                            <p style="margin: 0; font-size: 14px; color: #F0AB20">↑ X% vs last week</p>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
+                                  <td style="display: block; width: 100%; padding-bottom: 0.75rem;">
+                                    <a href="https://your-link.com/new-customers" style="text-decoration: none; display: block;">
+                                      <table style="width: 100%; background: white; border: 1px solid goldenrod; border-radius: 6px;" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding: 0.75rem;">
+                                              <p style="color: #4b5563; font-weight: 500; margin: 0; font-size: 0.875rem;">New Customers</p>
+                                              <p style="color: #1f2937; font-size: 1.125rem; font-weight: 600; margin-top: 0.5rem;">X first-time buyers</p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </a>
                                   </td>
-                                  <td style="width: 33.333333%; padding-left: 4px; padding-right: 4px">
-                                    <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate; width: 100%; border-radius: 6px; border-width: 1px; border-color: #e5e7eb; background-color: #fffffe">
-                                      <tbody>
-                                        <tr>
-                                          <td style="padding: 12px">
-                                            <p style="margin: 0 0 4px; font-size: 14px; color: #6b7280">Orders Placed</p>
-                                            <p style="margin: 0 0 4px; font-size: 20px; font-weight: 600; color: #1f2937">X orders</p>
-                                            <p style="margin: 0; font-size: 14px; color: #F0AB20">↑ X% vs last week</p>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
+                                </tr>
+                                <tr>
+                                  <td style="display: block; width: 100%; padding-bottom: 0.75rem;">
+                                    <a href="https://your-link.com/returning-customers" style="text-decoration: none; display: block;">
+                                      <table style="width: 100%; background: white; border: 1px solid goldenrod; border-radius: 6px;" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding: 0.75rem;">
+                                              <p style="color: #4b5563; font-weight: 500; margin: 0; font-size: 0.875rem;">Returning Customers</p>
+                                              <p style="color: #1f2937; font-size: 1.125rem; font-weight: 600; margin-top: 0.5rem;">X repeat buyers</p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </a>
                                   </td>
-                                  <td style="width: 33.333333%; padding-left: 8px">
-                                    <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate; width: 100%; border-radius: 6px; border-width: 1px; border-color: #e5e7eb; background-color: #fffffe">
-                                      <tbody>
-                                        <tr>
-                                          <td style="padding: 12px">
-                                            <p style="margin: 0 0 4px; font-size: 14px; color: #6b7280">Total Sales</p>
-                                            <p style="margin: 0 0 4px; font-size: 20px; font-weight: 600; color: #1f2937">$X revenue</p>
-                                            <p style="margin: 0; font-size: 14px; color: #F0AB20">↑ X% vs last week</p>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
+                                </tr>
+                                <tr>
+                                  <td style="display: block; width: 100%; padding-bottom: 0.75rem;">
+                                    <a href="https://your-link.com/abandoned-checkouts" style="text-decoration: none; display: block;">
+                                      <table style="width: 100%; background: white; border: 1px solid goldenrod; border-radius: 6px;" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding: 0.75rem;">
+                                              <p style="color: #4b5563; font-weight: 500; margin: 0; font-size: 0.875rem;">Abandoned Checkouts</p>
+                                              <p style="color: #1f2937; font-size: 1.125rem; font-weight: 600; margin-top: 0.5rem;">X potential sales</p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="display: block; width: 100%; padding-bottom: 0.75rem;">
+                                    <a href="https://your-link.com/conversion-rate" style="text-decoration: none; display: block;">
+                                      <table style="width: 100%; background: white; border: 1px solid goldenrod; border-radius: 6px;" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding: 0.75rem;">
+                                              <p style="color: #4b5563; font-weight: 500; margin: 0; font-size: 0.875rem;">Conversion Rate</p>
+                                              <p style="color: #1f2937; font-size: 1.125rem; font-weight: 600; margin-top: 0.5rem;">X% of visitors purchased</p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </a>
                                   </td>
                                 </tr>
                               </tbody>
@@ -104,62 +201,21 @@
                   </td>
                 </tr>
                 <tr>
-                  <td style="padding-bottom: 24px">
-                    <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate; width: 100%; border-radius: 8px; border-width: 1px; border-color: #e5e7eb; background-color: #fffffe; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
+                  <td style="padding-bottom: 1.5rem;">
+                    <table style="width: 100%; background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-collapse: separate;" cellpadding="0" cellspacing="0" role="presentation">
                       <tbody>
                         <tr>
-                          <td style="border-bottom-width: 1px; border-color: #e5e7eb; padding: 16px">
-                            <h2 style="margin: 0; font-size: 18px; font-weight: 600; color: #1f2937">What's Trending</h2>
+                          <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">
+                            <h2 style="color: #1f2937; font-size: 1.125rem; font-weight: 600; margin: 0;">Next Steps</h2>
                           </td>
                         </tr>
                         <tr>
-                          <td style="padding: 16px">
-                            <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%">
-                              <tbody>
-                                <tr>
-                                  <td style="padding-bottom: 12px">
-                                    <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%">
-                                      <tbody>
-                                        <tr>
-                                          <td style="vertical-align: top; width: 32px">
-                                            <span style="display: inline-block; border-radius: 9999px; background-color: #f3f4f6; padding: 4px; text-align: center">
-                                             <span style="color: #4b5563">🏆</span>
-                                            </span>
-                                          </td>
-                                          <td style="padding-left: 12px">
-                                            <p style="margin: 0; font-size: 14px; color: #1f2937">
-                                              <strong>Bestseller:</strong>
-                                              <span style="color: #1F0444">[Product Name]</span> – Sold X times!
-                                            </p>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%">
-                                      <tbody>
-                                        <tr>
-                                          <td style="vertical-align: top; width: 32px">
-                                            <span style="display: inline-block; border-radius: 9999px; background-color: #f3f4f6; padding: 4px; text-align: center">
-                                             <span style="color: #4b5563">💡</span>
-                                            </span>
-                                          </td>
-                                          <td style="padding-left: 12px">
-                                            <p style="margin: 0; font-size: 14px; color: #1f2937">
-                                              <strong>Opportunity:</strong> Consider running a promo on this product to
-                                              drive more sales!
-                                            </p>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
+                          <td style="padding: 1rem;">
+                            <p style="color: #1f2937; font-size: 0.875rem; margin: 0 0 0.75rem;"><strong style="color: #eab308;">Restock Fast!</strong> [Product Name] is flying off the shelves!</p>
+                            <p style="color: #1f2937; font-size: 0.875rem; margin: 0 0 0.75rem;"><strong>Boost Sales with a Discount!</strong> Use the Discount Campaign feature to increase conversions.</p>
+                            <p style="color: #1f2937; font-size: 0.875rem; margin: 0;"><strong>Turn Visitors into Buyers with Retargeting Ads</strong></p>
+                            <p style="color: #4b5563; font-size: 0.875rem; margin: 0.25rem 0 0.5rem;">Reconnect with store visitors by running Facebook & Instagram ads targeting only visitors.</p>
+                            <p style="color: #374151; font-size: 0.875rem; margin: 0;"><strong>Not on Business Boost yet?</strong> <a href="#" style="color: #9333ea; text-decoration: underline; font-weight: 500;">Upgrade now</a> to unlock retargeting ads and drive more sales!</p>
                           </td>
                         </tr>
                       </tbody>
@@ -167,235 +223,16 @@
                   </td>
                 </tr>
                 <tr>
-                  <td style="padding-bottom: 24px">
-                    <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate; width: 100%; border-radius: 8px; border-width: 1px; border-color: #e5e7eb; background-color: #fffffe; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
-                      <tbody>
-                        <tr>
-                          <td style="border-bottom-width: 1px; border-color: #e5e7eb; padding: 16px">
-                            <h2 style="margin: 0; font-size: 18px; font-weight: 600; color: #1f2937">Growth & Engagement</h2>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="padding: 16px">
-                            <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%">
-                              <tbody>
-                                <tr>
-                                  <td style="width: 50%; padding-bottom: 16px; padding-right: 8px">
-                                    <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate; width: 100%; border-radius: 6px; border-width: 1px; border-color: #e5e7eb; background-color: #fffffe">
-                                      <tbody>
-                                        <tr>
-                                          <td style="padding: 12px">
-                                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                              <p style="margin: 0; font-size: 14px; font-weight: 500; color: #4b5563">New Customers</p>
-                                              <span style="color: #9ca3af">👤</span>
-                                            </div>
-                                            <p style="margin: 8px 0 0; font-size: 18px; font-weight: 600; color: #1f2937">
-                                              X first-time buyers
-                                            </p>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                  <td style="width: 50%; padding-bottom: 16px; padding-left: 8px">
-                                    <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate; width: 100%; border-radius: 6px; border-width: 1px; border-color: #e5e7eb; background-color: #fffffe">
-                                      <tbody>
-                                        <tr>
-                                          <td style="padding: 12px">
-                                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                              <p style="margin: 0; font-size: 14px; font-weight: 500; color: #4b5563">
-                                                Returning Customers
-                                              </p>
-                                              <span style="color: #9ca3af">🔄</span>
-                                            </div>
-                                            <p style="margin: 8px 0 0; font-size: 18px; font-weight: 600; color: #1f2937">
-                                              X repeat buyers
-                                            </p>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="width: 50%; padding-right: 8px">
-                                    <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate; width: 100%; border-radius: 6px; border-width: 1px; border-color: #e5e7eb; background-color: #fffffe">
-                                      <tbody>
-                                        <tr>
-                                          <td style="padding: 12px">
-                                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                              <p style="margin: 0; font-size: 14px; font-weight: 500; color: #4b5563">
-                                                Abandoned Checkouts
-                                              </p>
-                                              <span style="color: #9ca3af">🛒</span>
-                                            </div>
-                                            <p style="margin: 8px 0 0; font-size: 18px; font-weight: 600; color: #1f2937">
-                                              X potential sales
-                                            </p>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                  <td style="width: 50%; padding-left: 8px">
-                                    <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate; width: 100%; border-radius: 6px; border-width: 1px; border-color: #e5e7eb; background-color: #fffffe">
-                                      <tbody>
-                                        <tr>
-                                          <td style="padding: 12px">
-                                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                              <p style="margin: 0; font-size: 14px; font-weight: 500; color: #4b5563">Conversion Rate</p>
-                                              <span style="color: #9ca3af">%</span>
-                                            </div>
-                                            <p style="margin: 8px 0 0; font-size: 18px; font-weight: 600; color: #1f2937">
-                                              X% of visitors purchased
-                                            </p>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-bottom: 24px">
-                    <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate; width: 100%; border-radius: 8px; border-width: 1px; border-color: #e5e7eb; background-color: #fffffe; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
-                      <tbody>
-                        <tr>
-                          <td style="border-bottom-width: 1px; border-color: #e5e7eb; padding: 16px">
-                            <h2 style="margin: 0; font-size: 18px; font-weight: 600; color: #1f2937">Next Steps</h2>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="padding: 16px">
-                            <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%">
-                              <tbody>
-                                <tr>
-                                  <td style="padding-bottom: 12px">
-                                    <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%">
-                                      <tbody>
-                                        <tr>
-                                          <td style="vertical-align: top; width: 32px">
-                                            <span style="display: inline-block; border-radius: 9999px; background-color: #f3f4f6; padding: 4px; text-align: center">
-                                             <span style="color: #4b5563">⚡</span>
-                                            </span>
-                                          </td>
-                                          <td style="padding-left: 12px">
-                                            <p style="margin: 0; font-size: 14px; color: #1f2937">
-                                              <strong style="color: #F0AB20">Restock Fast!</strong> [Product Name]
-                                              is flying off the shelves!
-                                            </p>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding-bottom: 12px">
-                                    <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%">
-                                      <tbody>
-                                        <tr>
-                                          <td style="vertical-align: top; width: 32px">
-                                            <span style="display: inline-block; border-radius: 9999px; background-color: #f3f4f6; padding: 4px; text-align: center">
-                                             <span style="color: #4b5563">%</span>
-                                            </span>
-                                          </td>
-                                          <td style="padding-left: 12px">
-                                            <p style="margin: 0; font-size: 14px; color: #1f2937">
-                                              <strong>Boost Sales with a Discount!</strong> Use the Discount Campaign
-                                              feature to increase conversions.
-                                            </p>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%">
-                                      <tbody>
-                                        <tr>
-                                          <td style="vertical-align: top; width: 32px">
-                                            <span style="display: inline-block; border-radius: 9999px; background-color: #f3f4f6; padding: 4px; text-align: center">
-                                             <span style="color: #4b5563">👥</span>
-                                            </span>
-                                          </td>
-                                          <td style="padding-left: 12px">
-                                            <div>
-                                              <p style="margin: 0; font-size: 14px; color: #1f2937">
-                                                <strong>Turn Visitors into Buyers with Retargeting Ads</strong>
-                                              </p>
-                                              <p style="margin: 4px 0 8px; font-size: 14px; color: #4b5563">
-                                                Reconnect with store visitors by running Facebook &amp; Instagram ads
-                                                targeting only visitors to remind them about your products.
-                                              </p>
-                                              <table cellpadding="0" cellspacing="0" role="presentation" style="margin-top: 8px; width: 100%">
-                                                <tbody>
-                                                  <tr>
-                                                    <td style="padding-bottom: 4px">
-                                                      <p style="margin: 0; font-size: 14px; color: #374151">
-                                                        <strong>Already on Business Boost?</strong> Connect your
-                                                        Facebook Pixel now!
-                                                      </p>
-                                                    </td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>
-                                                      <p style="margin: 0; font-size: 14px; color: #374151">
-                                                        <strong>Not on Business Boost yet?</strong>
-                                                        <a href="#" style="margin-left: 4px; font-weight: 500; color: #570BC1; text-decoration: underline">
-                                                          Upgrade now
-                                                        </a>
-                                                        to unlock retargeting ads and drive more sales!
-                                                      </p>
-                                                    </td>
-                                                  </tr>
-                                                </tbody>
-                                              </table>
-                                            </div>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" style="padding-top: 24px">
-                    <a href="#" style="display: inline-block; border-radius: 6px; background-color: #570BC1; padding: 12px 24px; font-weight: 600; color: #fffffe; text-decoration: none">
+                  <td align="center" style="padding-top: 1.5rem;">
+                    <a href="#" style="display: inline-block; background-color: #9333ea; color: white; font-weight: 600; padding: 12px 24px; border-radius: 6px; text-decoration: none;">
                       See Full Store Analytics
                     </a>
-                    <table cellpadding="0" cellspacing="0" role="presentation" style="margin-top: 32px; width: 100%; border-top-width: 1px; border-color: #e5e7eb; padding-top: 24px">
-                      <tbody>
-                        <tr>
-                          <td align="center">
-                            <p style="margin: 0; font-size: 14px; color: #4b5563">
-                              That's it for this week! Keep pushing forward, and let's grow together. 🚀
-                            </p>
-                            <p style="margin: 12px 0 0; font-weight: 600; color: #1f2937">
-                              Best Regards,
-                              <br>
-                              The SokoSQ Team
-                            </p>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <p style="color: #4b5563; font-size: 14px; margin: 24px 0 0;">
+                      That's it for this week! Keep pushing forward, and let's grow together. 🚀
+                    </p>
+                    <p style="color: #1f2937; font-weight: 600; margin: 12px 0 0;">
+                      Best Regards,<br>The SokoSQ Team
+                    </p>
                   </td>
                 </tr>
               </tbody>
